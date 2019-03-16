@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Техномарт</title>
+  <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,12 +15,12 @@
           <a class="user-nav__logo logo">
             <img src="img/logo.svg" alt="Логотип магазина Техномарт" width="110" height="18">
           </a>
-          <div class="user-nav__search">
+          <form class="user-nav__search" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" class="user-nav__search-input" id="search" placeholder="Поиск:">
             <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input type="search" class="user-nav__seach-input" id="search" placeholder="Поиск">
-          </div>
+          </form>
           <a href="#" class="user-nav__bookmark">
-            Закладки: 1
+            Закладки: 0
           </a>
           <a href="#" class="user-nav__cart cart">
             Корзина: <span class="user-nav__cart-number">0</span>
@@ -32,63 +33,65 @@
     </div>
     <div class="main-header__info">
       <div class="wrapper">
-        <h1 class="main-header__title">
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </h1>
-        <div class="main-header__contacts">
-          <a href="tel:8-812-555-05-55" class="main-header__phone">
-            +7 (812) 555-05-55
-          </a>
-          <p class="main-header__address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-        </div>
-        <div class="main-header__user user-index">
-          <a href="#" class="user-index__login">
-            Войти
-          </a>
-          <a href="#" class="user-index__reg">
-            Регистрация
-          </a>
+        <div class="main-header__info-flex">
+          <h1 class="main-header__title">
+            Интернет-магазин строительных материалов и инструментов для ремонта
+          </h1>
+          <div class="main-header__contacts">
+            <a href="tel:8-812-555-05-55" class="main-header__phone">
+              +7 (812) 555-05-55
+            </a>
+            <p class="main-header__address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <div class="main-header__user user-index">
+            <a href="#" class="user-index__login">
+              Войти
+            </a>
+            <a href="#" class="user-index__reg">
+              Регистрация
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <nav class="main-nav">
       <div class="wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li>
             <a href="#" class="main-nav__item-link">
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a href="#" class="main-nav__item-link">
               Компания
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a href="catalog.html" class="main-nav__item-link">
               Каталог
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a href="#" class="main-nav__item-link">
               Новости
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a href="#" class="main-nav__item-link">
               Спецпредложения
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a href="#" class="main-nav__item-link">
               Доставка
             </a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a href="#" class="main-nav__item-link">
-              Контакты
+              Контакт
             </a>
           </li>
         </ul>
