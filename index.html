@@ -91,7 +91,7 @@
           </li>
           <li>
             <a href="#" class="main-nav__item-link">
-              Контакт
+              Контакты
             </a>
           </li>
         </ul>
@@ -104,7 +104,7 @@
     </h2>
     <div class="wrapper">
       <ul class="offers__list">
-        <li class="offers__item offers__item--materials">
+        <li class="offers__item offers__item--materials offers__item--new">
           <h3 class="offers__title">
             Материалы
           </h3>
@@ -114,7 +114,7 @@
         </li>
         <li class="offers__item offers__item--tools">
           <h3 class="offers__title">
-            Инструменты
+            Инструмент
           </h3>
           <a href="#" class="offers__button">
             На все случаи
@@ -128,12 +128,12 @@
             Для стройки
           </a>
         </li>
-        <li class="offers__item offers__item--catalog">
-          <button class="offers__sliders-btn offers__sliders-btn--prev" aria-label="Кнопка слайда назад">
+        <li class="offers__item offers__item--catalog offers__item--catalog-first">
+          <button type="button" class="offers__sliders-btn offers__sliders-btn--prev" aria-label="Кнопка слайда назад">
           </button>
-          <button class="offers__sliders-btn offers__sliders-btn--next" aria-label="Кнопка слайда вперед">
+          <button type="button" class="offers__sliders-btn offers__sliders-btn--next" aria-label="Кнопка слайда вперед">
           </button>
-          <div class="offers__slider">
+          <div class="offers__slider offers__slider--first offers__slider--shown">
             <h3 class="offers__slider-title">
               Дрели
             </h3>
@@ -141,7 +141,7 @@
               Соседям на радость!
             </p>
           </div>
-          <div class="offers__slider">
+          <div class="offers__slider offers__slider--second">
             <h3 class="offers__slider-title">
               Перфораторы
             </h3>
@@ -149,26 +149,40 @@
               Настроящие мужские игрушки
             </p>
           </div>
-          <a href="catalog.html" class="button offers__catalog-button">
-            Открыть каталог
-          </a>
+          <div class="offers__catalog-line">
+            <a href="catalog.html" class="button offers__catalog-button">
+              Открыть каталог
+            </a>
+            <div class="offers__catalog-inputs">
+              <input type="radio" class="offers__catalog-input offers__catalog-input--prev visually-hidden" name="slide" id="slide1">
+              <label for="slide1" class="offers__catalog-label">
+                <span class="visually-hidden">Первый слайд</span>
+              </label>
+              <input type="radio" class="offers__catalog-input offers__catalog-input--next visually-hidden" name="slide" id="slide2" checked>
+              <label for="slide2" class="offers__catalog-label">
+                <span class="visually-hidden">Второй слайд</span>
+              </label>
+            </div>
+          </div>
         </li>
-        <li class="offers__item offers__item--discounts">
-          <h3 class="offers__title">
-            Скидки 50%
-          </h3>
-          <a href="#" class="offers__button">
-            На 350 товаров
-          </a>
-        </li>
-        <li class="offers__item offers__item--delivery">
-          <h3 class="offers__title">
-            Доставка
-          </h3>
-          <a href="#" class="offers__button">
-            Бесплатно
-          </a>
-        </li>
+        <div class="offers__items-right">
+          <li class="offers__item offers__item--discounts">
+            <h3 class="offers__title">
+              Скидки 50%
+            </h3>
+            <a href="#" class="offers__button">
+              На 350 товаров
+            </a>
+          </li>
+          <li class="offers__item offers__item--delivery">
+            <h3 class="offers__title">
+              Доставка
+            </h3>
+            <a href="#" class="offers__button">
+              Бесплатно
+            </a>
+          </li>
+        </div>
       </ul>
     </div>
   </section>
@@ -184,10 +198,10 @@
       </div>
       <ul class="goods">
         <li class="product">
-          <button type="button" class="product__button-buy">
+          <button type="button" class="product__button product__button-buy">
             Купить
           </button>
-          <button type="button" class="product__button-bookmark">
+          <button type="button" class="product__button product__button-bookmark">
             В закладки
           </button>
           <img class="product__img" src="img/1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
@@ -197,15 +211,15 @@
           <p class="product__first-price">
             32500 Р.
           </p>
-          <p class="goods__price">
+          <a href="#" class="product__price">
             25500 Р.
-          </p>
+          </a>
         </li>
         <li class="product">
-          <button type="button" class="product__button-buy">
+          <button type="button" class="product__button product__button-buy">
             Купить
           </button>
-          <button type="button" class="product__button-bookmark">
+          <button type="button" class="product__button product__button-bookmark">
             В закладки
           </button>
           <img class="product__img" src="img/2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
@@ -215,15 +229,15 @@
           <p class="product__first-price">
             22500 Р.
           </p>
-          <p class="product__price">
+          <a href="#" class="product__price">
             15500 Р.
-          </p>
+          </a>
         </li>
         <li class="product">
-          <button type="button" class="product__button-buy">
+          <button type="button" class="product__button product__button-buy">
             Купить
           </button>
-          <button type="button" class="product__button-bookmark">
+          <button type="button" class="product__button product__button-bookmark">
             В закладки
           </button>
           <img class="product__img" src="img/3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
@@ -233,24 +247,24 @@
           <p class="product__first-price">
             30500 Р.
           </p>
-          <p class="product__price">
+          <a href="#" class="product__price">
             25500 Р.
-          </p>
+          </a>
         </li>
-        <li class="product product--hit">
-          <button type="button" class="product__button-buy">
+        <li class="product product--hit product--new">
+          <button type="button" class="product__button product__button-buy">
             Купить
           </button>
-          <button type="button" class="product__button-bookmark">
+          <button type="button" class="product__button product__button-bookmark">
             В закладки
           </button>
           <img class="product__img" src="img/4.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
           <h4 class="product__title">
             Перфоратор BOSCH BFG 2000
           </h4>
-          <p class="product__price">
+          <a href="#" class="product__price">
             12500 Р.
-          </p>
+          </a>
         </li>
       </ul>
     </div>
@@ -538,5 +552,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
