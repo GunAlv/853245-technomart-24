@@ -100,15 +100,22 @@ window.addEventListener('keydown', function (evt) {
 
 var contactsBtn = document.querySelector('.about-us__button--contacts');
 var contactsForm = document.querySelector('.form');
-var contactsClose = document.querySelector('.form__buttom');
+var contactsClose = document.querySelector('.form__modal-close');
 var overlay = document.querySelector('.overlay');
 
-contactsBtn.addEventListener('click', function() {
+contactsBtn.addEventListener('click', function(evt) {
+  evt.preventDefault();
   overlay.style.display = 'block';
   contactsForm.classList.add('form--showed');
-})
+});
 
 overlay.addEventListener('click', function() {
   this.style.display = 'none';
+  contactsForm.classList.remove('form--showed');
+});
+
+
+contactsClose.addEventListener('click', function() {
+  overlay.style.display = 'none';
   contactsForm.classList.remove('form--showed');
 })
