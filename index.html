@@ -251,7 +251,7 @@
             25500 Р.
           </a>
         </li>
-        <li class="product product--hit product--new">
+        <li class="product product--new">
           <button type="button" class="product__button product__button-buy">
             Купить
           </button>
@@ -281,42 +281,42 @@
       </div>
       <ul class="popular-producer__list">
         <li class="popular-producer__item">
-          <a href="#">
+          <a href="#" class="popular-producer__link">
             <img class="popular-producer__img" src="img/bosch.jpg" width="126" height="37" alt="Логотип производителя Bosh">
           </a>
         </li>
         <li class="popular-producer__item">
-          <a href="#">
+          <a href="#" class="popular-producer__link">
             <img class="popular-producer__img" src="img/Makita.jpg" width="123" height="40" alt="Логотип производителя Makita">
           </a>
         </li>
         <li class="popular-producer__item">
-          <a href="#">
+          <a href="#" class="popular-producer__link">
             <img class="popular-producer__img" src="img/DeWALT.jpg" width="146" height="44" alt="Логотип производителя Dewalt">
           </a>
         </li>
         <li class="popular-producer__item">
-          <a href="#">
+          <a href="#" class="popular-producer__link">
             <img class="popular-producer__img" src="img/Inrerscol.jpg" width="200" height="88" alt="Логотип производителя Интерскол">
           </a>
         </li>
         <li class="popular-producer__item">
-          <a href="#">
+          <a href="#" class="popular-producer__link">
             <img class="popular-producer__img" src="img/Hitachi.jpg" width="169" height="31" alt="Логотип производителя Hitachi">
           </a>
         </li>
         <li class="popular-producer__item">
-          <a href="#">
-            <img class="popular-producer__img" src="img/LG.jpg" width="121" height="73" alt="Логотип производителя LG">
+          <a href="#" class="popular-producer__link">
+            <img class="popular-producer__img" src="img/LG.jpg" width="121" height="73" alt="Логотип производителя Lg">
           </a>
         </li>
         <li class="popular-producer__item">
-          <a href="#">
-            <img class="popular-producer__img" src="img/AEG.jpg" width="151" height="96" alt="Логотип производителя AEG">
+          <a href="#" class="popular-producer__link">
+            <img class="popular-producer__img" src="img/AEG.jpg" width="151" height="96" alt="Логотип производителя Aeg">
           </a>
         </li>
         <li class="popular-producer__item">
-          <a href="#">
+          <a href="#" class="popular-producer__link">
             <img class="popular-producer__img" src="img/Metabo.jpg" width="204" height="69" alt="Логотип производителя Metabo">
           </a>
         </li>
@@ -332,53 +332,69 @@
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <ul class="services__list">
-        <li class="services__item">
-          <input type="radio" class="services__input" name="service" id="delivery">
-          <label for="delivery" class="services__label">Доставка</label>
-        </li>
-        <li class="services__item">
-            <input type="radio" class="services__input" name="service" id="guarantee">
+      <div class="services__relative">
+        <ul class="services__list">
+          <li class="services__item">
+            <input type="radio" class="visually-hidden services__input" name="service" id="delivery">
+            <label for="delivery" class="services__label">Доставка</label>
+          </li>
+          <li class="services__item">
+            <input type="radio" class="visually-hidden services__input" name="service" id="guarantee">
             <label for="guarantee" class="services__label">Гарантия</label>
-        </li>
-        <li class="services__item">
-            <input type="radio" class="services__input" name="service" id="credit">
+          </li>
+          <li class="services__item">
+            <input type="radio" class="visually-hidden services__input" name="service" id="credit">
             <label for="credit" class="services__label">Кредит</label>
-        </li>
-      </ul>
-      <div class="services__sliders">
-        <div class="services__slide">
-          <p class="services__slide-title">
-            Доставка
-          </p>
-          <p class="description services__slide-description">
-            Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем,
-            поднимая его на ваш этаж!
-          </p>
-        </div>
-        <div class="services__slide">
-          <p class="services__slide-title">
-            Гарантия
-          </p>
-          <p class="description services__slide-description">
-            Если купленный у нас товар поломается или заискрит,
-            а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-            Дом уж восстановите как-нибудь сами.
-          </p>
-        </div>
-        <div class="services__slide">
-          <p class="services__slide-title">
-            Кредит
-          </p>
-          <p class="description services__slide-description">
-            Залезть в долговую яму стало проще!
-            Кредитные консультанты придут вам на помощь.
-          </p>
-          <a href="#" class="services__slide-button">
-            Отправить заявку
-          </a>
+          </li>
+        </ul>
+        <div class="services__sliders">
+          <div class="services__slide services__slide--first services__slide--shown">
+            <p class="services__slide-title">
+              Доставка
+            </p>
+            <p class="description services__slide-description">
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!
+            </p>
+          </div>
+          <div class="services__slide services__slide--second">
+            <p class="services__slide-title">
+              Гарантия
+            </p>
+            <p class="description services__slide-description">
+              Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его возгаранием,
+              вы всегда можете быть уверены в нашей гарантии.
+              Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+          <div class="services__slide services__slide--second">
+            <p class="services__slide-title">
+              Гарантия
+            </p>
+            <p class="description services__slide-description">
+              Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его возгаранием,
+              вы всегда можете быть уверены в нашей гарантии.
+              Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+          <div class="services__slide services__slide--third">
+            <p class="services__slide-title">
+              Кредит
+            </p>
+            <p class="description services__slide-description">
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a href="#" class="services__slide-button">
+              Отправить заявку
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -386,7 +402,7 @@
   <section class="about-us">
     <div class="wrapper">
       <div class="about-us__flex">
-        <div class="about-us__company">
+        <section class="about-us__company">
           <h2 class="title about-us__company-title">
             Компания «Техномарт»‎
           </h2>
@@ -395,6 +411,8 @@
           </p>
           <p class="description about-us__company-description">
             Мы можем доставить ваш товар в самые отдаленные точки России!
+          </p>
+          <p class="description about-us__company-description">
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="about-us__company-list">
@@ -411,42 +429,45 @@
           <a href="#" class="button about-us__button">
             Подробнее о компании
           </a>
-        </div>
-        <div class="about-us__contacts">
+        </section>
+        <section class="about-us__contacts">
           <h2 class="title about-us__contacts-title">
             Контакты
           </h2>
-          <p class="about-us__contacts-description">
+          <p class="description about-us__contacts-description">
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <div class="about-us__contacts__map">
-            <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
+            <img src="img/map.jpg" class="about-us__map-img" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
             <div class="about-us__contacts-popup">
-              <!-- Iframe -->
+              <iframe class="about__us-contacts-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552974826626" width="940" height="447" allowfullscreen></iframe>
+              <button type="button" class="about-us__popup-close modal-close" aria-label="Закрыть окно с картой"></button>
             </div>
           </div>
-          <button type="button" class="button about-us__button">
+          <a href="#" class="button about-us__button about-us__button--contacts">
             Заблудились? Напишите нам!
-          </button>
-        </div>
+          </a>
+        </section>
       </div>
     </div>
     <div class="about__us-form form">
       <form action="https://echo.htmlacademy.ru" method="post" id="form">
-        <div class="form__flex">
+        <div class="form__container">
+          <div class="form__flex">
+            <p class="form__item">
+              <label for="form-name" class="form__label">Ваше имя:</label>
+              <input type="text" class="input form__input" placeholder="Имя Фамилия" id="form-name">
+            </p>
+            <p class="form__item">
+              <label for="form-email" class="form__label">Ваш e-mail:</label>
+              <input type="email" class="input form__input" placeholder="email@example.com" id="form-email">
+            </p>
+          </div>
           <p class="form__item">
-            <label for="form-name" class="form__label">Ваше имя:</label>
-            <input type="text" class="input form__input" placeholder="Имя Фамилия" id="form-name">
-          </p>
-          <p class="form__item">
-            <label for="form-email" class="form__label">Ваш e-mail:</label>
-            <input type="email" class="input form__input" placeholder="email@example.com" id="form-email">
+            <label for="form-text" class="form__label">Текст письма:</label>
+            <textarea class="form__textarea" placeholder="В свободной форме" id="form-text"></textarea>
           </p>
         </div>
-        <p class="form__item">
-          <label for="form-text" class="form__label">Текст письма:</label>
-          <textarea placeholder="В свободной форме" id="form-text"></textarea>
-        </p>
         <div class="form__button-container">
           <button type="submit" class="button form__button">
             Отправить
@@ -555,6 +576,7 @@
       </div>
     </div>
   </footer>
+  <div class="overlay"></div>
   <script src="js/script.js"></script>
 </body>
 </html>
