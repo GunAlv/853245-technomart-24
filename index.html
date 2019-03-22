@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
   <title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="main-header">
@@ -258,7 +258,7 @@
           <button type="button" class="product__button product__button-bookmark">
             В закладки
           </button>
-          <img class="product__img" src="img/4.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+          <img class="product__img" src="img/4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
           <h4 class="product__title">
             Перфоратор BOSCH BFG 2000
           </h4>
@@ -450,31 +450,31 @@
         </div>
       </div>
     </div>
-    <div class="about__us-form form">
-      <form action="https://echo.htmlacademy.ru" method="post" id="form">
-        <div class="form__container">
-          <div class="form__flex">
-            <p class="form__item">
-              <label for="form-name" class="form__label">Ваше имя:</label>
-              <input type="text" class="input form__input" placeholder="Имя Фамилия" id="form-name">
+    <div class="about__us-form feedback">
+      <form action="https://echo.htmlacademy.ru" method="post" id="feedback">
+        <div class="feedback__container">
+          <div class="feedback__flex">
+            <p class="feedback__item">
+              <label for="feedback-name" class="feedback__label">Ваше имя:</label>
+              <input type="text" class="input feedback__input" placeholder="Имя Фамилия" id="feedback-name">
             </p>
-            <p class="form__item">
-              <label for="form-email" class="form__label">Ваш e-mail:</label>
-              <input type="email" class="input form__input" placeholder="email@example.com" id="form-email">
+            <p class="feedback__item">
+              <label for="feedback-email" class="feedback__label">Ваш e-mail:</label>
+              <input type="email" class="input feedback__input" placeholder="email@example.com" id="feedback-email">
             </p>
           </div>
-          <p class="form__item">
-            <label for="form-text" class="form__label">Текст письма:</label>
-            <textarea class="form__textarea" placeholder="В свободной форме" id="form-text"></textarea>
+          <p class="feedback__item">
+            <label for="feedback-text" class="feedback__label">Текст письма:</label>
+            <textarea class="feedback__textarea" placeholder="В свободной форме" id="feedback-text"></textarea>
           </p>
         </div>
-        <div class="form__button-container">
-          <button type="submit" class="button form__button">
+        <div class="feedback__button-container">
+          <button type="submit" class="button feedback__button">
             Отправить
           </button>
         </div>
       </form>
-      <button type="button" class="form__modal-close modal-close" aria-label="Закрыть форму"></button>
+      <button type="button" class="feedback__modal-close modal-close" aria-label="Закрыть форму"></button>
     </div>
   </section>
   <footer class="footer">
@@ -482,7 +482,7 @@
       <div class="wrapper">
         <div class="footer__flex">
           <a class="footer__logo logo">
-            <img class="footer__logo-img" src="img/logo.svg" alt="Логотип магазина Техномарт" width="138" height="23">
+            <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип магазина Техномарт" width="138" height="23">
           </a>
           <ul class="footer__nav footer__nav--first">
             <li class="footer__nav-item">
@@ -583,6 +583,6 @@
     </div>
   </footer>
   <div class="overlay"></div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

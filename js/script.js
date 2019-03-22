@@ -93,29 +93,31 @@ window.addEventListener('keydown', function (evt) {
     evt.preventDefault();
     mapIframe.style.display = 'none';
     overlay.style.display = 'none';
-    contactsForm.classList.remove('form--showed');
+    contactsfeedback.classList.remove('feedback--showed');
   }
 });
 
 
 var contactsBtn = document.querySelector('.about-us__button--contacts');
-var contactsForm = document.querySelector('.form');
-var contactsClose = document.querySelector('.form__modal-close');
+var contactsfeedback = document.querySelector('.feedback');
+var contactsClose = document.querySelector('.feedback__modal-close');
 var overlay = document.querySelector('.overlay');
 
 contactsBtn.addEventListener('click', function(evt) {
   evt.preventDefault();
   overlay.style.display = 'block';
-  contactsForm.classList.add('form--showed');
+  contactsfeedback.classList.add('feedback--showed');
 });
 
 overlay.addEventListener('click', function() {
   this.style.display = 'none';
-  contactsForm.classList.remove('form--showed');
+  contactsfeedback.classList.remove('feedback--showed');
 });
 
 
 contactsClose.addEventListener('click', function() {
   overlay.style.display = 'none';
-  contactsForm.classList.remove('form--showed');
-})
+  contactsfeedback.classList.remove('feedback--showed');
+});
+
+
