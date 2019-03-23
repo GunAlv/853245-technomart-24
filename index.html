@@ -5,7 +5,7 @@
   <title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -332,7 +332,7 @@
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <div class="services__relative">
+      <div class="services__flex">
         <ul class="services__list">
           <li class="services__item">
             <input type="radio" class="visually-hidden services__input" name="service" id="delivery" checked>
@@ -438,8 +438,11 @@
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <div class="about-us__contacts__map">
-            <img src="img/map.jpg" class="about-us__map-img" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
-            <div class="about-us__contacts-popup">
+            <a href="#" class="about-us__map-link">
+              <img src="img/map.jpg" class="about-us__map-img" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
+            </a>
+            <div class="about-us__contacts-popup about-us__contacts-popup--no-js">
+              <img class="abouts-us__img-popup" src="img/map.jpg" alt="Большая Конюшенная ул., 19">
               <iframe class="about__us-contacts-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552974826626" width="940" height="447" allowfullscreen></iframe>
               <button type="button" class="about-us__popup-close modal-close" aria-label="Закрыть окно с картой"></button>
             </div>
@@ -484,33 +487,35 @@
           <a class="footer__logo logo">
             <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип магазина Техномарт" width="138" height="23">
           </a>
-          <ul class="footer__nav footer__nav--first">
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
-                Компания
-              </a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
-                Новости
-              </a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="catalog.html" class="footer__nav-link">
-                Каталог
-              </a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
-                Доставка
-              </a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
-                Контакты
-              </a>
-            </li>
-          </ul>
+          <div class="footer__nav-container-first">
+            <ul class="footer__nav footer__nav--first">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">
+                  Компания
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">
+                  Новости
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="catalog.html" class="footer__nav-link">
+                  Каталог
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">
+                  Доставка
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -521,28 +526,30 @@
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               <a class="footer__contacts-link" href="tel:8-812-555-05-55">+7 (812) 555-05-55</a>
             </p>
-            <ul class="footer__nav footer__nav--second">
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">
-                  Материалы
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">
-                  Техника
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">
-                  Инструмент
-                </a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">
-                  Спецпредложения
-                </a>
-              </li>
-            </ul>
+            <div class="footer__nav-container-second">
+              <ul class="footer__nav footer__nav--second">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">
+                    Материалы
+                  </a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">
+                    Техника
+                  </a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">
+                    Инструмент
+                  </a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">
+                    Спецпредложения
+                  </a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>
@@ -553,23 +560,25 @@
             © 2010–2019 Компания «Техномарт»
             Все права защищены
           </p>
-          <ul class="footer__social">
-            <li class="footer__social__item">
-              <a href="#" class="footer__social-link">
-                <img class="footer__social-img" src="img/vk.svg" alt="Техномарт в ВКонтакте" width="26" height="15">
-              </a>
-            </li>
-            <li class="footer__social__item">
-              <a href="#" class="footer__social-link">
-                <img class="footer__social-img" src="img/fb.svg" alt="Техномарт в Фейсбуке" width="12" height="22">
-              </a>
-            </li>
-            <li class="footer__social__item">
-              <a href="#" class="footer__social-link">
-                <img class="footer__social-img" src="img/insta.svg" alt="Техномарт в Инстаграме" width="21" height="21">
-              </a>
-            </li>
-          </ul>
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li class="footer__social__item">
+                <a href="#" class="footer__social-link">
+                  <img class="footer__social-img" src="img/vk.svg" alt="Техномарт в ВКонтакте" width="26" height="15">
+                </a>
+              </li>
+              <li class="footer__social__item">
+                <a href="#" class="footer__social-link">
+                  <img class="footer__social-img" src="img/fb.svg" alt="Техномарт в Фейсбуке" width="12" height="22">
+                </a>
+              </li>
+              <li class="footer__social__item">
+                <a href="#" class="footer__social-link">
+                  <img class="footer__social-img" src="img/insta.svg" alt="Техномарт в Инстаграме" width="21" height="21">
+                </a>
+              </li>
+            </ul>
+          </div>
           <p class="footer__feedback">
             Обратная связь:
             <a class="footer__feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -583,6 +592,6 @@
     </div>
   </footer>
   <div class="overlay"></div>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
