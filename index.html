@@ -5,7 +5,7 @@
   <title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="main-header">
@@ -198,12 +198,14 @@
       </div>
       <ul class="goods">
         <li class="product">
-          <button type="button" class="product__button product__button-buy">
-            Купить
-          </button>
-          <button type="button" class="product__button product__button-bookmark">
-            В закладки
-          </button>
+          <div class="product__buttons">
+            <button type="button" class="product__button product__button-buy">
+              Купить
+            </button>
+            <button type="button" class="product__button product__button-bookmark">
+              В закладки
+            </button>
+          </div>
           <img class="product__img" src="img/1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
           <h4 class="product__title">
             Перфоратор BOSCH BFG 9000
@@ -216,12 +218,14 @@
           </a>
         </li>
         <li class="product">
-          <button type="button" class="product__button product__button-buy">
-            Купить
-          </button>
-          <button type="button" class="product__button product__button-bookmark">
-            В закладки
-          </button>
+          <div class="product__buttons">
+            <button type="button" class="product__button product__button-buy">
+              Купить
+            </button>
+            <button type="button" class="product__button product__button-bookmark">
+              В закладки
+            </button>
+          </div>
           <img class="product__img" src="img/2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
           <h4 class="product__title">
             Перфоратор BOSCH BFG 3000
@@ -234,12 +238,14 @@
           </a>
         </li>
         <li class="product">
-          <button type="button" class="product__button product__button-buy">
-            Купить
-          </button>
-          <button type="button" class="product__button product__button-bookmark">
-            В закладки
-          </button>
+          <div class="product__buttons">
+            <button type="button" class="product__button product__button-buy">
+              Купить
+            </button>
+            <button type="button" class="product__button product__button-bookmark">
+              В закладки
+            </button>
+          </div>
           <img class="product__img" src="img/3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
           <h4 class="product__title">
             Перфоратор BOSCH BFG 6000
@@ -252,12 +258,14 @@
           </a>
         </li>
         <li class="product product--new">
-          <button type="button" class="product__button product__button-buy">
-            Купить
-          </button>
-          <button type="button" class="product__button product__button-bookmark">
-            В закладки
-          </button>
+          <div class="product__buttons">
+            <button type="button" class="product__button product__button-buy">
+              Купить
+            </button>
+            <button type="button" class="product__button product__button-bookmark">
+              В закладки
+            </button>
+          </div>
           <img class="product__img" src="img/4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
           <h4 class="product__title">
             Перфоратор BOSCH BFG 2000
@@ -439,7 +447,7 @@
           </p>
           <div class="about-us__contacts__map">
             <a href="#" class="about-us__map-link">
-              <img src="img/map.jpg" class="about-us__map-img" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
+              <img src="img/map-small.jpg" class="about-us__map-img" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
             </a>
             <div class="about-us__contacts-popup about-us__contacts-popup--no-js">
               <img class="abouts-us__img-popup" src="img/map.jpg" alt="Большая Конюшенная ул., 19">
@@ -592,6 +600,6 @@
     </div>
   </footer>
   <div class="overlay"></div>
-  <script src="js/script.js"></script>
+  <script src="js/min-script.js"></script>
 </body>
 </html>
