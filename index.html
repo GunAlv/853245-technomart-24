@@ -16,7 +16,7 @@
             <img class="user-nav__logo-img" src="img/logo.svg" alt="Логотип магазина Техномарт" width="110" height="18">
           </a>
           <form class="user-nav__search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" class="user-nav__search-input" id="search" placeholder="Поиск:">
+            <input type="search" class="user-nav__search-input" id="search" name="search" placeholder="Поиск:">
             <label class="visually-hidden" for="search">Поиск по сайту</label>
           </form>
           <a href="#" class="user-nav__bookmark">
@@ -450,7 +450,7 @@
               <img src="img/map-small.jpg" class="about-us__map-img" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
             </a>
             <div class="about-us__contacts-popup about-us__contacts-popup--no-js">
-              <img class="abouts-us__img-popup" src="img/map.jpg" alt="Большая Конюшенная ул., 19">
+              <img class="abouts-us__img-popup" src="img/map.jpg" alt="Большая Конюшенная ул., 19" width="940" height="447">
               <iframe class="about__us-contacts-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552974826626" width="940" height="447" allowfullscreen></iframe>
               <button type="button" class="about-us__popup-close modal-close" aria-label="Закрыть окно с картой"></button>
             </div>
@@ -467,16 +467,16 @@
           <div class="feedback__flex">
             <p class="feedback__item">
               <label for="feedback-name" class="feedback__label">Ваше имя:</label>
-              <input type="text" class="input feedback__input" placeholder="Имя Фамилия" id="feedback-name">
+              <input type="text" class="input feedback__input" placeholder="Имя Фамилия" id="feedback-name" name="name">
             </p>
             <p class="feedback__item">
               <label for="feedback-email" class="feedback__label">Ваш e-mail:</label>
-              <input type="email" class="input feedback__input" placeholder="email@example.com" id="feedback-email">
+              <input type="email" class="input feedback__input" placeholder="email@example.com" id="feedback-email" name="email">
             </p>
           </div>
           <p class="feedback__item">
             <label for="feedback-text" class="feedback__label">Текст письма:</label>
-            <textarea class="feedback__textarea" placeholder="В свободной форме" id="feedback-text"></textarea>
+            <textarea class="feedback__textarea" placeholder="В свободной форме" id="feedback-text" name="wishings"></textarea>
           </p>
         </div>
         <div class="feedback__button-container">
@@ -598,7 +598,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div class="overlay"></div>
   <script src="js/min-script.js"></script>
 </body>

@@ -19,6 +19,7 @@ body {
   font-size: 17px;
   line-height: 17px;
   position: relative;
+  min-width: 960px;
 }
 
 img {
@@ -1086,16 +1087,12 @@ a {
 }
 
 .services__sliders {
-  /* width: 620px; */
   position: relative;
-  /* left: 80px; */
 }
 
 .services__slide {
   position: relative;
   top: 0;
-  /* top: -190px; */
-  /* left: 320px; */
   left: 80px;
 }
 
@@ -1527,6 +1524,7 @@ a {
 
 .footer {
   background-color: #32425c;
+  background-size: cover;
 }
 
 .footer__top {
@@ -1579,8 +1577,8 @@ a {
 }
 
 .footer__nav-container-first {
-  width: 555px;
   margin-left: auto;
+  max-width: 552px;
 }
 
 .footer__nav--first {
@@ -1606,7 +1604,7 @@ a {
 
 .footer__nav-container-second {
   margin-left: auto;
-  width: 526px;
+  max-width: 586px;
 }
 
 .footer__nav--second {
@@ -2103,16 +2101,17 @@ a {
   opacity: 0.3;
 }
 
-.form__checkbox-input:focus + .form__checkbox-label::before,
-.form__checkbox-input:hover + .form__checkbox-label::before {
-  opacity: 0.4;
-}
 .form__checkbox-input:focus + .form__checkbox-label::before {
   outline: 2px solid Highlight;
 }
 
 .form__checkbox-input:checked + .form__checkbox-label::before {
   background-image: url('../img/checkbox-on.svg');
+  opacity: 0.3;
+}
+
+.form__checkbox-input:focus + .form__checkbox-label::before,
+.form__checkbox-input:hover + .form__checkbox-label::before {
   opacity: 0.4;
 }
 
@@ -2152,22 +2151,22 @@ a {
   border-color:#b5b5b5;
 }
 
+.form__power-input:hover + .form__power-label::after,
+.form__power-input:focus + .form__power-label::after {
+  border-color:#b5b5b5;
+}
+
 .form__power-input:focus + .form__power-label::before {
   outline: 2px solid Highlight;
 }
 
 .form__power-input:checked + .form__power-label::after {
   display: block;
-  background-color: #b5b5b5;
 }
 
 .form__power-input:disabled + .form__power-label::before,
 .form__power-input:disabled + .form__power-label::after {
   opacity: 0.3;
-}
-
-.form__power-input:checked + .form__power-label::before {
-  border-color:#b5b5b5;
 }
 
 .form__button {
@@ -2374,10 +2373,6 @@ a {
 
 .about-product__title {
   margin-bottom: 27px;
-}
-
-.about-product__description {
-  width: 920px;
 }
 
 .cart-modal {
